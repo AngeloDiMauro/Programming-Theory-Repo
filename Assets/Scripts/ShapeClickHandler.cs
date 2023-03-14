@@ -9,11 +9,15 @@ public class ShapeClickHandler : MonoBehaviour
     public GameObject shapeObject;
     private Shape shapeScript;
 
+    private void OnMouseDown()
+    {
+        DisplayShapeInfo(shapeObject.GetComponent<Shape>());
+    }
 
-    public void DisplayShapeData(Shape shape)
+    public void DisplayShapeInfo(Shape shape)
     {
         Debug.Log("Name: " + shape.Name);
-        Debug.Log("Color: " + shape.Color);
+        Debug.Log("Color: " + shape.Color); //ABSTRACTION
     }
 
     void Update()

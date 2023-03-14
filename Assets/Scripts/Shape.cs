@@ -9,19 +9,19 @@ public class Shape : MonoBehaviour
 
     public string Name
     {   
-        get { return shapeName; }
+        get { return shapeName; } //ENCAPSULATION
         set { shapeName = value; }  
     }
 
     public string Color
     {
-        get { return shapeColor; }
+        get { return shapeColor; } //ENCAPSULATION
         set { shapeName = value; }
     }
 
     public virtual void DisplayText()
     {
-        Debug.Log("These are lights.");
+        Debug.Log("These are lights."); //POLYMORPHISM
     }
 
 
